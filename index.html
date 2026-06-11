@@ -1,0 +1,244 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Caule & Flor — Floricultura Artesanal</title>
+  <link rel="stylesheet" href="style.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,700;1,400&family=Lato:wght@300;400;700&display=swap" rel="stylesheet" />
+</head>
+<body>
+
+  <!-- CABEÇALHO -->
+  <header class="header" id="inicio">
+    <div class="header__inner">
+      <a href="#inicio" class="header__logo">
+        <span class="logo-mark">✿</span>
+        <span class="logo-text">Caule <em>&amp;</em> Flor</span>
+      </a>
+      <nav class="header__nav">
+        <a href="#produtos">Produtos</a>
+        <a href="#sobre">Sobre</a>
+        <a href="#contato">Contato</a>
+      </nav>
+      <button class="nav-toggle" aria-label="Abrir menu" onclick="toggleMenu()">☰</button>
+    </div>
+    <nav class="mobile-nav" id="mobileNav">
+      <a href="#produtos" onclick="toggleMenu()">Produtos</a>
+      <a href="#sobre" onclick="toggleMenu()">Sobre</a>
+      <a href="#contato" onclick="toggleMenu()">Contato</a>
+    </nav>
+  </header>
+
+  <!-- HERO -->
+  <section class="hero">
+    <div class="hero__content">
+      <p class="hero__eyebrow">Floricultura Artesanal · Curitiba</p>
+      <h1 class="hero__title">Cada flor,<br /><em>uma intenção.</em></h1>
+      <p class="hero__sub">Arranjos únicos feitos à mão para os momentos que merecem ser lembrados.</p>
+      <a href="#produtos" class="btn btn--primary">Ver produtos</a>
+    </div>
+    <div class="hero__visual" aria-hidden="true">
+      <div class="flower-art">
+        <div class="petal p1"></div>
+        <div class="petal p2"></div>
+        <div class="petal p3"></div>
+        <div class="petal p4"></div>
+        <div class="petal p5"></div>
+        <div class="petal p6"></div>
+        <div class="flower-center"></div>
+        <div class="stem"></div>
+        <div class="leaf leaf-l"></div>
+        <div class="leaf leaf-r"></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- PRODUTOS -->
+  <section class="produtos" id="produtos">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-label">O que fazemos</span>
+        <h2>Nossos arranjos</h2>
+      </div>
+      <div class="cards">
+
+        <article class="card">
+          <div class="card__icon">💐</div>
+          <h3>Buquês Clássicos</h3>
+          <p>Rosas, gérberas e lírios selecionados a cada manhã. Composições atemporais para declarações sinceras.</p>
+          <span class="card__price">A partir de R$ 89</span>
+        </article>
+
+        <article class="card card--featured">
+          <div class="card__badge">Mais pedido</div>
+          <div class="card__icon">🌿</div>
+          <h3>Arranjos Tropicais</h3>
+          <p>Heliconias, strelitzias e folhagens exuberantes que transformam qualquer ambiente numa obra viva.</p>
+          <span class="card__price">A partir de R$ 145</span>
+        </article>
+
+        <article class="card">
+          <div class="card__icon">🌸</div>
+          <h3>Buquê de Noiva</h3>
+          <p>Criado exclusivamente para o seu dia. Consulta presencial e entrega garantida com até 48h de antecedência.</p>
+          <span class="card__price">Sob consulta</span>
+        </article>
+
+        <article class="card">
+          <div class="card__icon">🪴</div>
+          <h3>Plantas & Vasos</h3>
+          <p>Suculentas, cactos e plantas ornamentais em vasos de cerâmica artesanal — presentes para durar anos.</p>
+          <span class="card__price">A partir de R$ 55</span>
+        </article>
+
+        <article class="card">
+          <div class="card__icon">🎁</div>
+          <h3>Cesta Presente</h3>
+          <p>Flores, chocolates e produtos naturais reunidos num presente pensado do início ao fim.</p>
+          <span class="card__price">A partir de R$ 190</span>
+        </article>
+
+        <article class="card">
+          <div class="card__icon">🌻</div>
+          <h3>Assinatura Mensal</h3>
+          <p>Receba um arranjo novo toda semana ou a cada quinzena. Sua casa sempre viva, sem esforço.</p>
+          <span class="card__price">A partir de R$ 220/mês</span>
+        </article>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- SOBRE -->
+  <section class="sobre" id="sobre">
+    <div class="container sobre__inner">
+      <div class="sobre__deco" aria-hidden="true">
+        <div class="deco-circle"></div>
+        <div class="deco-ring"></div>
+      </div>
+      <div class="sobre__text">
+        <span class="section-label">Nossa história</span>
+        <h2>Nascemos de um jardim.</h2>
+        <p>
+          A Caule & Flor surgiu em 2015 no quintal da família Monteiro, em Curitiba. O que começou como paixão pela horticultura
+          virou um ateliê de arranjos onde cada peça é feita com intenção — sem pressa, sem padrão.
+        </p>
+        <p>
+          Trabalhamos com produtores locais do Paraná, priorizamos espécies da estação e usamos embalagens
+          100% recicláveis. Acreditamos que uma flor bem colocada no lugar certo muda o humor de uma manhã inteira.
+        </p>
+        <ul class="sobre__valores">
+          <li><span class="valor-mark">✦</span> Flores frescas todos os dias</li>
+          <li><span class="valor-mark">✦</span> Fornecedores locais e sustentáveis</li>
+          <li><span class="valor-mark">✦</span> Entrega em Curitiba e região</li>
+        </ul>
+      </div>
+    </div>
+  </section>
+
+  <!-- CONTATO -->
+  <section class="contato" id="contato">
+    <div class="container">
+      <div class="section-header section-header--light">
+        <span class="section-label">Fale conosco</span>
+        <h2>Faça seu pedido</h2>
+        <p class="section-desc">Respondemos em até 2 horas em dias úteis.</p>
+      </div>
+      <div class="form-wrapper">
+        <div class="form-card">
+          <div class="form-group">
+            <label for="nome">Seu nome</label>
+            <input type="text" id="nome" placeholder="Maria Clara" />
+          </div>
+          <div class="form-group">
+            <label for="email">E-mail</label>
+            <input type="email" id="email" placeholder="maria@email.com" />
+          </div>
+          <div class="form-group">
+            <label for="tipo">Tipo de arranjo</label>
+            <select id="tipo">
+              <option value="">Selecione uma opção</option>
+              <option>Buquê Clássico</option>
+              <option>Arranjo Tropical</option>
+              <option>Buquê de Noiva</option>
+              <option>Planta & Vaso</option>
+              <option>Cesta Presente</option>
+              <option>Assinatura Mensal</option>
+            </select>
+          </div>
+          <div class="form-group">
+            <label for="mensagem">Mensagem</label>
+            <textarea id="mensagem" rows="4" placeholder="Conta pra gente a ocasião, cores preferidas ou qualquer detalhe especial..."></textarea>
+          </div>
+          <button type="button" class="btn btn--submit">Enviar mensagem ✿</button>
+        </div>
+        <div class="contato__info">
+          <div class="info-item">
+            <span class="info-icon">📍</span>
+            <div>
+              <strong>Endereço</strong>
+              <p>Rua das Araucárias, 412<br />Bairro Água Verde — Curitiba, PR</p>
+            </div>
+          </div>
+          <div class="info-item">
+            <span class="info-icon">🕐</span>
+            <div>
+              <strong>Horário</strong>
+              <p>Seg – Sex: 8h às 19h<br />Sáb: 8h às 14h</p>
+            </div>
+          </div>
+          <div class="info-item">
+            <span class="info-icon">📱</span>
+            <div>
+              <strong>WhatsApp</strong>
+              <p>(41) 99874-3210</p>
+            </div>
+          </div>
+          <div class="info-item">
+            <span class="info-icon">✉️</span>
+            <div>
+              <strong>E-mail</strong>
+              <p>oi@cauleflor.com.br</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- RODAPÉ -->
+  <footer class="footer">
+    <div class="container footer__inner">
+      <div class="footer__brand">
+        <span class="logo-mark">✿</span>
+        <span class="logo-text">Caule <em>&amp;</em> Flor</span>
+        <p>Floricultura artesanal desde 2015.</p>
+      </div>
+      <div class="footer__links">
+        <strong>Navegação</strong>
+        <a href="#inicio">Início</a>
+        <a href="#produtos">Produtos</a>
+        <a href="#sobre">Sobre</a>
+        <a href="#contato">Contato</a>
+      </div>
+      <div class="footer__links">
+        <strong>Redes sociais</strong>
+        <a href="#">Instagram</a>
+        <a href="#">Facebook</a>
+        <a href="#">Pinterest</a>
+      </div>
+    </div>
+    <div class="footer__bottom">
+      <p>© 2025 Caule & Flor — Todos os direitos reservados · CNPJ 00.000.000/0001-00</p>
+    </div>
+  </footer>
+
+  <script>
+    function toggleMenu() {
+      document.getElementById('mobileNav').classList.toggle('open');
+    }
+  </script>
+
+</body>
+</html>
